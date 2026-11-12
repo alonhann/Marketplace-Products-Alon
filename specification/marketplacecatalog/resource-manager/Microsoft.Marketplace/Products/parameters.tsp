@@ -26,6 +26,7 @@ const MarketSingleParameterDescription = "Product market value that will be used
 const IncludeHiddenPlansParameterDescription = "Indicates whether to include hidden plans in the response. By default, includeHiddenPlans is set to FALSE.";
 const PlanIdParameterDescription = "Optional to pass the plan id to filter to a specific plan within the product. If not specified, the response will include all plans of the product.";
 const SkuIdParameterDescription = "Optional to pass the sku id to filter to a specific sku within the product. If not specified, the response will include all skus of the product.";
+const ForcePricingCalculationParameterDescription = "Indicates whether to force term price calculation for products that are flagged as large-payload products. To keep responses small, products with a very large number of SKUs are returned without term prices unless a specific skuId is provided. Set to TRUE to calculate and return prices for all SKUs of such a product. The flag has no effect when skuId is specified (prices are always calculated), nor for products that are not large-payload products. It never disables price calculation. By default, forcePricingCalculation is set to FALSE.";
 const IncludeServiceInstructionTemplatesParameterDescription = "Indicates whether to include the product's service instruction templates in the response. By default, includeServiceInstructionTemplates is set to FALSE.";
 
 /** Product

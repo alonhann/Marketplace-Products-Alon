@@ -234,6 +234,10 @@ interface ProductGet {
     @doc(SkuIdParameterDescription)
     @query
     skuId?: string,
+
+    @doc(ForcePricingCalculationParameterDescription)
+    @query
+    forcePricingCalculation?: boolean = false,
   ): ArmResponse<ProductDetails> | DiscoveryErrorPayload;
 
   /** Gets a single product by subscription. */
@@ -272,6 +276,10 @@ interface ProductGet {
     @doc(LookUpOfferInTenantLevelParameterDescription)
     @query
     lookUpOfferInTenantLevel?: boolean = false,
+
+    @doc(ForcePricingCalculationParameterDescription)
+    @query
+    forcePricingCalculation?: boolean = false,
   ): ArmResponse<ProductDetails> | DiscoveryErrorPayload;
 
   /** Gets a single product by billing account. */
@@ -306,6 +314,10 @@ interface ProductGet {
     @doc(SkuIdParameterDescription)
     @query
     skuId?: string,
+
+    @doc(ForcePricingCalculationParameterDescription)
+    @query
+    forcePricingCalculation?: boolean = false,
   ): ArmResponse<ProductDetails> | DiscoveryErrorPayload;
 
   /** Gets a single product by billing profile. */
@@ -341,6 +353,10 @@ interface ProductGet {
     @doc(SkuIdParameterDescription)
     @query
     skuId?: string,
+
+    @doc(ForcePricingCalculationParameterDescription)
+    @query
+    forcePricingCalculation?: boolean = false,
   ): ArmResponse<ProductDetails> | DiscoveryErrorPayload;
 }
 

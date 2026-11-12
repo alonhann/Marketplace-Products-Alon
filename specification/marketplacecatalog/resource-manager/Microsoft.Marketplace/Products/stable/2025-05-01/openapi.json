@@ -210,6 +210,14 @@
             "description": "Optional to pass the sku id to filter to a specific sku within the product. If not specified, the response will include all skus of the product.",
             "required": false,
             "type": "string"
+          },
+          {
+            "name": "forcePricingCalculation",
+            "in": "query",
+            "description": "Indicates whether to force term price calculation for products that are flagged as large-payload products. To keep responses small, products with a very large number of SKUs are returned without term prices unless a specific skuId is provided. Set to TRUE to calculate and return prices for all SKUs of such a product. The flag has no effect when skuId is specified (prices are always calculated), nor for products that are not large-payload products. It never disables price calculation. By default, forcePricingCalculation is set to FALSE.",
+            "required": false,
+            "type": "boolean",
+            "default": false
           }
         ],
         "responses": {
@@ -387,6 +395,14 @@
             "description": "Optional to pass the sku id to filter to a specific sku within the product. If not specified, the response will include all skus of the product.",
             "required": false,
             "type": "string"
+          },
+          {
+            "name": "forcePricingCalculation",
+            "in": "query",
+            "description": "Indicates whether to force term price calculation for products that are flagged as large-payload products. To keep responses small, products with a very large number of SKUs are returned without term prices unless a specific skuId is provided. Set to TRUE to calculate and return prices for all SKUs of such a product. The flag has no effect when skuId is specified (prices are always calculated), nor for products that are not large-payload products. It never disables price calculation. By default, forcePricingCalculation is set to FALSE.",
+            "required": false,
+            "type": "boolean",
+            "default": false
           }
         ],
         "responses": {
@@ -609,6 +625,14 @@
             "description": "Optional to pass the sku id to filter to a specific sku within the product. If not specified, the response will include all skus of the product.",
             "required": false,
             "type": "string"
+          },
+          {
+            "name": "forcePricingCalculation",
+            "in": "query",
+            "description": "Indicates whether to force term price calculation for products that are flagged as large-payload products. To keep responses small, products with a very large number of SKUs are returned without term prices unless a specific skuId is provided. Set to TRUE to calculate and return prices for all SKUs of such a product. The flag has no effect when skuId is specified (prices are always calculated), nor for products that are not large-payload products. It never disables price calculation. By default, forcePricingCalculation is set to FALSE.",
+            "required": false,
+            "type": "boolean",
+            "default": false
           }
         ],
         "responses": {
@@ -784,6 +808,14 @@
             "name": "lookUpOfferInTenantLevel",
             "in": "query",
             "description": "Indicates whether to use the tenant in context to fetch the product. By default, lookUpOfferInTenantLevel is set to FALSE.",
+            "required": false,
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "name": "forcePricingCalculation",
+            "in": "query",
+            "description": "Indicates whether to force term price calculation for products that are flagged as large-payload products. To keep responses small, products with a very large number of SKUs are returned without term prices unless a specific skuId is provided. Set to TRUE to calculate and return prices for all SKUs of such a product. The flag has no effect when skuId is specified (prices are always calculated), nor for products that are not large-payload products. It never disables price calculation. By default, forcePricingCalculation is set to FALSE.",
             "required": false,
             "type": "boolean",
             "default": false
